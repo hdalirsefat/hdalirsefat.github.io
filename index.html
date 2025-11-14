@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - [Your Name]</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Apply the font to the whole body */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Smooth scroll class */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+    <!-- Navigation Menu -->
+    <nav class="bg-gray-800/80 backdrop-blur-sm sticky top-0 z-50 shadow-lg">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo/Name -->
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-bold text-teal-400">[Your Name]</a>
+                </div>
+                <!-- Menu Links -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#hero" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="#about" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="#portfolio" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Portfolio</a>
+                        <a href="#resume" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Resume</a>
+                    </div>
+                </div>
+                <!-- Mobile menu button (optional, kept simple) -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="bg-gray-800 shadow-xl">
+        <div class="max-w-6xl mx-auto py-24 px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl">
+                Welcome to My World of Data
+            </h1>
+            <p class="mt-6 max-w-md mx-auto text-lg text-gray-300 sm:text-xl md:mt-8 md:max-w-3xl">
+                Business Intelligence Specialist & Data Analyst, turning raw data into actionable insights.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-4 sm:p-6 lg:p-8">
+
+        <!-- About Me Section -->
+        <section id="about" class="my-16">
+            <h2 class="text-3xl font-bold text-center text-teal-400 mb-8">About Me</h2>
+            <div class="bg-gray-800 p-8 rounded-lg shadow-2xl max-w-4xl mx-auto">
+                <p class="text-lg text-gray-300 leading-relaxed">
+                    <!-- Replace with your own text -->
+                    Hi! I'm [Your Name], a Data Analyst with [Number] years of experience in the Business Intelligence field. My expertise lies in using Power BI to build interactive dashboards and reports that help businesses make smarter decisions.
+                    <br><br>
+                    I'm passionate about... (more about your interests and specializations) ...and I'm always learning new technologies in the data world.
+                </p>
+            </div>
+        </section>
+
+        <!-- Portfolio Section (Power BI) -->
+        <section id="portfolio" class="my-16">
+            <h2 class="text-3xl font-bold text-center text-teal-400 mb-12">Power BI Portfolio</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+
+                <!-- 
+                  IMPORTANT: Replace the href="#" with the Power BI "Publish to web" URL.
+                  (Guide in instructions.md)
+                -->
+                <!-- Portfolio Item 1 -->
+                <a href="https_//app.powerbi.com/view?r=eyJrIjoiYOUR_UNIQUE_ID_HERE" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="block bg-gray-800 rounded-lg shadow-2xl overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-teal-500/30">
+                    
+                    <img src="https://placehold.co/600x400/374151/9ca3af?text=Sales+Dashboard" 
+                         alt="Sales Dashboard Placeholder" 
+                         class="w-full h-64 object-cover">
+                    
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-white mb-3">Sales Dashboard</h3>
+                        <p class="text-gray-400 mb-4">A comprehensive analysis of sales by region, product, and time. This dashboard helps managers identify strengths and weaknesses.</p>
+                    </div>
+                </a>
+
+                <!-- 
+                  IMPORTANT: Replace the href="#" with your other Power BI URL.
+                -->
+                <!-- Portfolio Item 2 -->
+                <a href="https_//app.powerbi.com/view?r=eyJrIjoiYOUR_OTHER_ID_HERE" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="block bg-gray-800 rounded-lg shadow-2xl overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-teal-500/30">
+                    
+                    <img src="https://placehold.co/600x400/374151/9ca3af?text=HR+Dashboard" 
+                         alt="HR Dashboard Placeholder" 
+                         class="w-full h-64 object-cover">
+
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-white mb-3">HR Dashboard</h3>
+                        <p class="text-gray-400 mb-4">A report for analyzing employee attrition, job satisfaction, and key performance indicators (KPIs) for the HR team.</p>
+                    </div>
+                </a>
+
+                <!-- You can add more portfolio items by copying the <a> tag block -->
+
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="my-16 text-center">
+            <h2 class="text-3xl font-bold text-center text-teal-400 mb-8">My Resume</h2>
+            <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+                Download my resume to see my qualifications, work experience, and technical skills.
+            </p>
+            <!-- 
+              IMPORTANT: Make sure you upload your PDF file named "resume.pdf" 
+              (or any other name) to the root of your GitHub repository
+              and that the file name in the link below is correct.
+            -->
+            <a href="./resume.pdf" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="inline-block bg-teal-500 text-gray-900 font-bold text-lg px-8 py-3 rounded-lg shadow-lg hover:bg-teal-400 transition-colors duration-300">
+                Download Resume (PDF)
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 mt-20 shadow-inner">
+        <div class="max-w-6xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center text-gray-400">
+            <p>&copy; 2025 - [Your Name]. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Script for smooth scrolling (optional) -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
