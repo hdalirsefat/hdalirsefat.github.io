@@ -3,155 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - [Your Name]</title>
-    <!-- Tailwind CSS CDN -->
+    <title data-lang="pageTitle">Portfolio - Hadi Dalirsefat</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Font (Inter) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <script src="translations.js"></script>
 
     <style>
-        /* Apply the font to the whole body */
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Vazirmatn', sans-serif;
         }
-        /* Smooth scroll class */
         html {
             scroll-behavior: smooth;
         }
+        [dir="rtl"] {
+            font-family: 'Vazirmatn', sans-serif;
+        }
+        [dir="ltr"] {
+             font-family: 'Vazirmatn', sans-serif;
+        }
     </style>
 </head>
-<body class="bg-gray-900 text-gray-100">
+<body class="bg-gray-900 text-gray-100 transition-all duration-300">
 
-    <!-- Navigation Menu -->
     <nav class="bg-gray-800/80 backdrop-blur-sm sticky top-0 z-50 shadow-lg">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
-                <!-- Logo/Name -->
-                <div class="flex-shrink-0">
-                    <a href="#" class="text-2xl font-bold text-teal-400">[Your Name]</a>
-                </div>
-                <!-- Menu Links -->
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="#hero" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
-                        <a href="#about" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
-                        <a href="#portfolio" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Portfolio</a>
-                        <a href="#resume" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Resume</a>
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <a href="#" class="text-2xl font-bold text-teal-400">Hadi Dalirsefat</a>
                     </div>
                 </div>
-                <!-- Mobile menu button (optional, kept simple) -->
+                <div class="flex items-center">
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4" id="nav-links">
+                            <a href="#hero" data-lang="navHome" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                            <a href="#about" data-lang="navAbout" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+                            <a href="#portfolio" data-lang="navPortfolio" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Portfolio</a>
+                            <a href="#resume" data-lang="navResume" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Resume</a>
+                        </div>
+                    </div>
+                    <button id="lang-switcher" class="ml-4 px-3 py-1 bg-teal-500 text-gray-900 rounded-md text-sm font-bold hover:bg-teal-400">
+                        FA
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <header id="hero" class="bg-gray-800 shadow-xl">
         <div class="max-w-6xl mx-auto py-24 px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl">
-                Welcome to My World of Data
-            </h1>
-            <p class="mt-6 max-w-md mx-auto text-lg text-gray-300 sm:text-xl md:mt-8 md:max-w-3xl">
-                Business Intelligence Specialist & Data Analyst, turning raw data into actionable insights.
-            </p>
+            <h1 data-lang="heroTitle" class="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl"></h1>
+            <p data-lang="heroSubtitle" class="mt-6 max-w-md mx-auto text-lg text-gray-300 sm:text-xl md:mt-8 md:max-w-3xl"></p>
         </div>
     </header>
 
     <main class="max-w-6xl mx-auto p-4 sm:p-6 lg:p-8">
 
-        <!-- About Me Section -->
         <section id="about" class="my-16">
-            <h2 class="text-3xl font-bold text-center text-teal-400 mb-8">About Me</h2>
+            <h2 data-lang="aboutTitle" class="text-3xl font-bold text-center text-teal-400 mb-8"></h2>
             <div class="bg-gray-800 p-8 rounded-lg shadow-2xl max-w-4xl mx-auto">
-                <p class="text-lg text-gray-300 leading-relaxed">
-                    <!-- Replace with your own text -->
-                    Hi! I'm [Your Name], a Data Analyst with [Number] years of experience in the Business Intelligence field. My expertise lies in using Power BI to build interactive dashboards and reports that help businesses make smarter decisions.
-                    <br><br>
-                    I'm passionate about... (more about your interests and specializations) ...and I'm always learning new technologies in the data world.
-                </p>
+                <p data-lang="aboutText" class="text-lg text-gray-300 leading-relaxed"></p>
             </div>
         </section>
 
-        <!-- Portfolio Section (Power BI) -->
         <section id="portfolio" class="my-16">
-            <h2 class="text-3xl font-bold text-center text-teal-400 mb-12">Power BI Portfolio</h2>
+            <h2 data-lang="portfolioTitle" class="text-3xl font-bold text-center text-teal-400 mb-12"></h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
 
-                <!-- 
-                  IMPORTANT: Replace the href="#" with the Power BI "Publish to web" URL.
-                  (Guide in instructions.md)
-                -->
-                <!-- Portfolio Item 1 -->
-                <a href="https://app.powerbi.com/view?r=eyJrIjoiNmY1MWRiNGUtNTBiYi00YmU1LTk5MTgtNzc0YTY0ZmM1ZWNjIiwidCI6ImU3MDdlN2I4LTA3YWQtNGRkZC05ZTQxLWY4Mzc5MmIwYWRiYSJ9&embedImagePlaceholder=true&pageName=eb7e6408b1db7a85360d" 
+                <a href="https://app.powerbi.com/view?r=eyJrIjoiNmY1MWRiNGUtNTBiYi00YmU1LTk5MTgtNzc0YTY0ZmM1ZWNjIiwidCI6ImU3MDdlN2I4LTA3YWQtNGRkZC05ZTQxLWY4Mzc5MmIwYWRiYSJ9" 
                    target="_blank" 
                    rel="noopener noreferrer" 
                    class="block bg-gray-800 rounded-lg shadow-2xl overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-teal-500/30">
                     
-                    <img src="https://placehold.co/600x400/374151/9ca3af?text=Sales+Dashboard" 
-                         alt="Sales Dashboard Placeholder" 
-                         class="w-full h-64 object-cover">
+                    <iframe title="Sales Dashboard Preview" 
+                            class="w-full h-64 border-0 pointer-events-none" 
+                            src="https://app.powerbi.com/view?r=eyJrIjoiNmY1MWRiNGUtNTBiYi00YmU1LTk5MTgtNzc0YTY0ZmM1ZWNjIiwidCI6ImU3MDdlN2I4LTA3YWQtNGRkZC05ZTQxLWY4Mzc5MmIwYWRiYSJ9" 
+                            frameborder="0" 
+                            allowFullScreen="true">
+                    </iframe>
+                    
                     <div class="p-6">
-                        <h3 class="text-2xl font-bold text-white mb-3">Sales Dashboard</h3>
-                        <p class="text-gray-400 mb-4">A comprehensive analysis of sales by region, product, and time. This dashboard helps managers identify strengths and weaknesses.</p>
+                        <h3 data-lang="salesTitle" class="text-2xl font-bold text-white mb-3"></h3>
+                        <p data-lang="salesDesc" class="text-gray-400 mb-4"></p>
+                        <p data-lang="salesCaption" class="text-xs text-teal-400 mt-2 italic"></p>
                     </div>
                 </a>
-                    <iframe title="Dalirsefat-SM_BDAT" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNmY1MWRiNGUtNTBiYi00YmU1LTk5MTgtNzc0YTY0ZmM1ZWNjIiwidCI6ImU3MDdlN2I4LTA3YWQtNGRkZC05ZTQxLWY4Mzc5MmIwYWRiYSJ9" frameborder="0" allowFullScreen="true"></iframe>
 
-                <!-- 
-                  IMPORTANT: Replace the href="#" with your other Power BI URL.
-                -->
-                <!-- Portfolio Item 2 -->
-                <a href="https://app.powerbi.com/view?r=eyJrIjoiNmY1MWRiNGUtNTBiYi00YmU1LTk5MTgtNzc0YTY0ZmM1ZWNjIiwidCI6ImU3MDdlN2I4LTA3YWQtNGRkZC05ZTQxLWY4Mzc5MmIwYWRiYSJ9&embedImagePlaceholder=true&pageName=eb7e6408b1db7a85360d" 
+                <a href="https://app.powerbi.com/view?r=eyJrIjoiNmY1MWRiNGUtNTBiYi00YmU1LTk5MTgtNzc0YTY0ZmM1ZWNjIiwidCI6ImU3MDdlN2I4LTA3YWQtNGRkZC05ZTQxLWY4Mzc5MmIwYWRiYSJ9" 
                    target="_blank" 
                    rel="noopener noreferrer" 
                    class="block bg-gray-800 rounded-lg shadow-2xl overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-teal-500/30">
                     
-                    <img src="https://placehold.co/600x400/374151/9ca3af?text=HR+Dashboard" 
-                         alt="HR Dashboard Placeholder" 
-                         class="w-full h-64 object-cover">
+                    <iframe title="HR Dashboard Preview" 
+                            class="w-full h-64 border-0 pointer-events-none" 
+                            src="https://app.powerbi.com/view?r=eyJrIjoiNmY1MWRiNGUtNTBiYi00YmU1LTk5MTgtNzc0YTY0ZmM1ZWNjIiwidCI6ImU3MDdlN2I4LTA3YWQtNGRkZC05ZTQxLWY4Mzc5MmIwYWRiYSJ9" 
+                            frameborder="0" 
+                            allowFullScreen="true">
+                    </iframe>
+
                     <div class="p-6">
-                        <h3 class="text-2xl font-bold text-white mb-3">HR Dashboard</h3>
-                        <p class="text-gray-400 mb-4">A report for analyzing employee attrition, job satisfaction, and key performance indicators (KPIs) for the HR team.</p>
+                        <h3 data-lang="hrTitle" class="text-2xl font-bold text-white mb-3"></h3>
+                        <p data-lang="hrDesc" class="text-gray-400 mb-4"></p>
+                        <p data-lang="hrCaption" class="text-xs text-teal-400 mt-2 italic"></p>
                     </div>
                 </a>
-                    <iframe title="Dalirsefat-SM_BDAT" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNmY1MWRiNGUtNTBiYi00YmU1LTk5MTgtNzc0YTY0ZmM1ZWNjIiwidCI6ImU3MDdlN2I4LTA3YWQtNGRkZC05ZTQxLWY4Mzc5MmIwYWRiYSJ9" frameborder="0" allowFullScreen="true"></iframe>
-
-                <!-- You can add more portfolio items by copying the <a> tag block -->
 
             </div>
         </section>
 
-        <!-- Resume Section -->
         <section id="resume" class="my-16 text-center">
-            <h2 class="text-3xl font-bold text-center text-teal-400 mb-8">My Resume</h2>
-            <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
-                Download my resume to see my qualifications, work experience, and technical skills.
-            </p>
-            <!-- 
-              IMPORTANT: Make sure you upload your PDF file named "resume.pdf" 
-              (or any other name) to the root of your GitHub repository
-              and that the file name in the link below is correct.
-            -->
-            <a href="./resume.pdf" 
-               target="_blank" 
-               rel="noopener noreferrer"
-               class="inline-block bg-teal-500 text-gray-900 font-bold text-lg px-8 py-3 rounded-lg shadow-lg hover:bg-teal-400 transition-colors duration-300">
-                Download Resume (PDF)
-            </a>
+            <h2 data-lang="resumeTitle" class="text-3xl font-bold text-center text-teal-400 mb-8"></h2>
+            <p data-lang="resumeDesc" class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto"></p>
+            
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                <a href="./resume_en.pdf" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   data-lang="resumeBtnEn"
+                   class="inline-block bg-teal-500 text-gray-900 font-bold text-lg px-8 py-3 rounded-lg shadow-lg hover:bg-teal-400 transition-colors duration-300">
+                </a>
+                <a href="./resume_fa.pdf" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   data-lang="resumeBtnFa"
+                   class="inline-block bg-gray-700 text-white font-bold text-lg px-8 py-3 rounded-lg shadow-lg hover:bg-gray-600 transition-colors duration-300">
+                </a>
+            </div>
         </section>
 
     </main>
 
-    <!-- Footer -->
     <footer class="bg-gray-800 mt-20 shadow-inner">
         <div class="max-w-6xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center text-gray-400">
-            <p>&copy; 2025 - [Your Name]. All rights reserved.</p>
+            <p data-lang="footerText"></p>
         </div>
     </footer>
 
-    <!-- Script for smooth scrolling (optional) -->
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -161,10 +149,37 @@
                 });
             });
         });
+
+        const langSwitcher = document.getElementById('lang-switcher');
+        const textElements = document.querySelectorAll('[data-lang]');
+        
+        const setLanguage = (lang) => {
+            document.documentElement.lang = lang;
+            document.documentElement.dir = lang === 'fa' ? 'rtl' : 'ltr';
+            
+            langSwitcher.textContent = lang === 'en' ? 'FA' : 'EN';
+            
+            textElements.forEach(el => {
+                const key = el.getAttribute('data-lang');
+                if (translations[lang] && translations[lang][key]) {
+                    el.innerHTML = translations[lang][key];
+                }
+            });
+            
+            localStorage.setItem('lang', lang);
+        };
+
+        langSwitcher.addEventListener('click', () => {
+            const currentLang = document.documentElement.lang;
+            const newLang = currentLang === 'en' ? 'fa' : 'en';
+            setLanguage(newLang);
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedLang = localStorage.getItem('lang') || 'en';
+            setLanguage(savedLang);
+        });
     </script>
 
 </body>
-
 </html>
-
-
