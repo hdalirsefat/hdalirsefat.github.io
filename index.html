@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-lang="pageTitle">Portfolio - Hadi Dalirsefat</title>
+    <title data-lang="pageTitle">Portfolio - Power BI Dashboards</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
     <script src="translations.js"></script>
@@ -30,7 +30,7 @@
             <div class="flex items-center justify-between h-16">
                 <div class="flex items-center">
                     <div class="flex-shrink-0">
-                        <a href="#" class="text-2xl font-bold text-teal-400">Hadi Dalirsefat</a>
+                        <a href="#" class="text-2xl font-bold text-teal-400">My Data Analysis Experiences</a>
                     </div>
                 </div>
                 <div class="flex items-center">
@@ -43,7 +43,7 @@
                         </div>
                     </div>
                     <button id="lang-switcher" class="ml-4 px-3 py-1 bg-teal-500 text-gray-900 rounded-md text-sm font-bold hover:bg-teal-400">
-                        FA
+                        فارسی
                     </button>
                 </div>
             </div>
@@ -157,7 +157,7 @@
             document.documentElement.lang = lang;
             document.documentElement.dir = lang === 'fa' ? 'rtl' : 'ltr';
             
-            langSwitcher.textContent = lang === 'en' ? 'FA' : 'EN';
+            langSwitcher.textContent = lang === 'en' ? 'فارسی' : 'EN';
             
             textElements.forEach(el => {
                 const key = el.getAttribute('data-lang');
@@ -183,4 +183,5 @@
 
 </body>
 </html>
+
 
