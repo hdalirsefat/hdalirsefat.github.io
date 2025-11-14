@@ -1,6 +1,7 @@
 const translations = {
     "en": {
-        "pageTitle": "Portfolio - Power BI Dashboards",
+        "pageTitle": "Portfolio - Hadi Dalirsefat",
+        "navTitle": "My Data Analysis Experiences",
         "navHome": "Home",
         "navAbout": "About",
         "navPortfolio": "Portfolio",
@@ -25,7 +26,8 @@ const translations = {
         "footerText": "&copy; 2025 - Hadi Dalirsefat. All rights reserved."
     },
     "fa": {
-        "pageTitle": "نمونه کار - داشبوردهای هوش تجاری",
+        "pageTitle": "نمونه کار - هادی دلیرصفت",
+        "navTitle": "تجربیات من در تحلیل داده",
         "navHome": "خانه",
         "navAbout": "درباره من",
         "navPortfolio": "نمونه کار",
@@ -49,5 +51,4 @@ const translations = {
         "resumeBtnFa": "دانلود رزومه (FA)",
         "footerText": "© 2025 - هادی دلیرصفت. تمام حقوق محفوظ است."
     }
-
 };
