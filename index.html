@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-lang="pageTitle">Portfolio - Power BI Dashboards</title>
+    <meta name="robots" content="noindex, nofollow">
+    
+    <title data-lang="pageTitle">Portfolio - Hadi Dalirsefat</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
     <script src="translations.js"></script>
@@ -30,7 +32,7 @@
             <div class="flex items-center justify-between h-16">
                 <div class="flex items-center">
                     <div class="flex-shrink-0">
-                        <a href="#" class="text-2xl font-bold text-teal-400">My Data Analysis Experiences</a>
+                        <a href="#" class="text-2xl font-bold text-teal-400" data-lang="navTitle"></a>
                     </div>
                 </div>
                 <div class="flex items-center">
@@ -117,13 +119,13 @@
             <p data-lang="resumeDesc" class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto"></p>
             
             <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
-                <a href="https://docs.google.com/document/d/1WMKY0Sga4naZDOIaMp_OUlRBqgBLU4t8u3vkKycifcM/edit?usp=sharing" 
+                <a href="https://docs.google.com/document/d/1WMKY0Sga4naZDOIaMp_OUlRBqgBLU4t8u3vkKycifcM/" 
                    target="_blank" 
                    rel="noopener noreferrer"
                    data-lang="resumeBtnEn"
                    class="inline-block bg-teal-500 text-gray-900 font-bold text-lg px-8 py-3 rounded-lg shadow-lg hover:bg-teal-400 transition-colors duration-300">
                 </a>
-                <a href="https://docs.google.com/document/d/1yrXnxF-TPpu88tfzN3bcs8el8Vu4nDIzUWLBKOJtuw0/edit?usp=sharing" 
+                <a href="https://docs.google.com/document/d/1yrXnxF-TPpu88tfzN3bcs8el8Vu4nDIzUWLBKOJtuw0/" 
                    target="_blank" 
                    rel="noopener noreferrer"
                    data-lang="resumeBtnFa"
@@ -157,7 +159,7 @@
             document.documentElement.lang = lang;
             document.documentElement.dir = lang === 'fa' ? 'rtl' : 'ltr';
             
-            langSwitcher.textContent = lang === 'en' ? 'فارسی' : 'EN';
+            langSwitcher.textContent = lang === 'en' ? 'فارسی' : 'English';
             
             textElements.forEach(el => {
                 const key = el.getAttribute('data-lang');
@@ -183,5 +185,3 @@
 
 </body>
 </html>
-
-
