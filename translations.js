@@ -13,12 +13,23 @@ const translations = {
                     <br><br>
                     With a solid foundation of 11 years in engineering, I bring a unique perspective to data, allowing me to understand complex systems and perform deep root-cause analysis. I am passionate about designing end-to-end BI solutions—from data extraction (ETL) and process modeling (BPMN 2.0) to continuous performance monitoring and guiding digital transformation.`,
         "portfolioTitle": "Power BI Portfolio",
+        
         "DailyReportsTitle": "DailyReports Dashboard",
         "DailyReportsDesc": "The advanced report built with Power BI and DAX on a Microsoft Project Server database compares Enterprise-level MSP plans with logged reports in SharePoint after data cleaning (ETL), and displays production-related KPIs in a dashboard with dynamic performance measurement capabilities. This report also delivers operational insights for senior management.",
         "DailyReportsCaption": "Click to open the interactive report in a new tab.",
+        
         "OnlineSuperMarketTitle": "Online SuperMarket Analysis",
         "OnlineSuperMarketDesc": "In this dashboard, data cleaning (ETL) has been performed using Power Query, and the analytical charts track the performance metrics and comparisons of supermarkets from an online service while providing data-driven recommendations.",
         "OnlineSuperMarketCaption": "Click to open the interactive report in a new tab.",
+        
+        "DocMngtTitle": "Engineering Document Management",
+        "DocMngtDesc": "This dashboard tracks project engineering documents in compliance with the Master Document Register (MDR) and contractual schedules. It visualizes the latest document status, transmittal history, and submission details through interactive charts and filterable lists.",
+        "DocMngtCaption": "Click to open the interactive report in a new tab.",
+    
+        "WHMTitle": "Online Warehouse Management Dashboard",
+        "WHMDesc": "This dashboard displays real-time inventory updates, accounting for material requests and reservations across various projects. Available stock and reserved quantities are calculated based on issued warehouse vouchers and categorized by material and project.",
+        "WHMCaption": "Click to open the interactive report in a new tab."
+        
         "resumeTitle": "My Resume",
         "resumeDesc": "Download my resume to see my qualifications, work experience, and technical skills.",
         "resumeBtnEn": "Download Resume (EN)",
@@ -39,12 +50,23 @@ const translations = {
                     <br><br>
                     با داشتن پایه‌ای قوی از ۱۱ سال سابقه مهندسی، من دیدگاه منحصر به فردی را به دنیای داده می‌آورم که به من امکان می‌دهد سیستم‌های پیچیده را درک کنم و تحلیل عمیق ریشه‌ای (root-cause analysis) انجام دهم. من به طراحی راه‌حل‌های BI سرتاسری (end-to-end)  از استخراج داده (ETL) و مدل‌سازی فرآیند (BPMN 2.0) گرفته تا نظارت مستمر بر عملکرد و هدایت تحول دیجیتال اشتیاق دارم.`,
         "portfolioTitle": "نمونه کارهای Power BI",
+        
         "DailyReportsTitle": "داشبورد گزارش روزانه تولید",
         "DailyReportsDesc": "گزارش پیشرفته ساخته شده با Power BI و DAX بر روی دیتابیس Microsoft Project Server که برنامه های MSP در سطح Enterprise تعریف شده را با گزارشات ثبت شده در Sharepoint پس از پاکسازی داده ها (ETL) مقایسه کرده و KPIهای مرتبط با تولید را در یک داشبورد با قابلیت های سنجش داینامیک عملکرد نمایش میدهد. همچنین این گزارش بینش‌های عملیاتی برای مدیریت ارشد فراهم می‌کند.",
         "DailyReportsCaption": "برای باز کردن گزارش تعاملی در تب جدید کلیک کنید.",
+        
         "OnlineSuperMarketTitle": "داشبورد تحلیل سوپرمارکت آنلاین",
         "OnlineSuperMarketDesc": "در این داشبورد پاکسازی داده (ETL) با Power Query انجام شده و نمودارهای تحلیلی معیارهای سنجش و مقایسه سوپر مارکت های یه سرویس آنلاین را ردیابی کرده و توصیه‌های مبتنی بر داده ارائه می‌دهد.",
         "OnlineSuperMarketCaption": "برای باز کردن گزارش تعاملی در تب جدید کلیک کنید.",
+        
+        "DocMngtTitle": "مدیریت مستندات مهندسی (EDMS)",
+        "DocMngtDesc": "این داشبورد به منظور پایش و رهگیری کلیه مدارک مهندسی پروژه‌ها، مطابق با لیست MDR و تعهدات زمان‌بندی شده، طراحی شده است. آخرین وضعیت مدارک، تاریخچه ترانسمیتال‌ها و محتوای ارسالی در قالب نمودارهای بصری و لیست‌های تعاملی با قابلیت فیلترگذاری پیشرفته، نمایش داده می‌شود.",
+        "DocMngtCaption": "جهت مشاهده گزارش تعاملی در پنجره جدید، کلیک کنید.",
+    
+        "WHMTitle": "داشبورد مدیریت آنلاین انبار",
+        "WHMDesc": "در این داشبورد، آخرین وضعیت موجودی انبار با احتساب درخواست‌های کالا و مواد اولیه رزرو شده برای پروژه‌های مختلف پایش می‌شود. مقادیر موجود و رزرو شده بر اساس حواله‌های صادره محاسبه گردیده و به تفکیک نوع کالا و پروژه قابل بررسی است.",
+        "WHMCaption": "جهت مشاهده گزارش تعاملی در پنجره جدید، کلیک کنید."
+        
         "resumeTitle": "رزومه من",
         "resumeDesc": "رزومه من را دانلود کنید تا صلاحیت‌ها، تجربیات کاری و مهارت‌های فنی من را ببینید.",
         "resumeBtnEn": "Download Resume (EN)",
@@ -52,5 +74,6 @@ const translations = {
         "footerText": "© 2025 - هادی دلیرصفت. تمام حقوق محفوظ است."
     }
 };
+
 
 
