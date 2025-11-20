@@ -20,6 +20,13 @@
         [dir="rtl"] .markdown-content ul { padding-right: 1.5rem; padding-left: 0; }
         .markdown-content li { margin-bottom: 0.5rem; }
         .markdown-content strong { color: #fff; font-weight: 700; }
+        
+        /* Loader Fade Out Effect */
+        .fade-out {
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.5s ease-out;
+        }
     </style>
 </head>
 <body class="bg-gray-900 text-gray-100">
@@ -40,14 +47,25 @@
         <h1 id="detail-title" class="text-3xl md:text-5xl font-bold text-white mb-10 text-center leading-tight"></h1>
 
         <!-- Power BI Report Container -->
-        <div class="w-full h-[600px] bg-gray-800 rounded-xl overflow-hidden shadow-2xl mb-12 border border-gray-700 relative group">
-             <div class="absolute inset-0 flex items-center justify-center text-gray-500 -z-10">Loading Report...</div>
-            <iframe id="detail-iframe" class="w-full h-full" frameborder="0" allowFullScreen="true"></iframe>
+        <div class="w-full h-[600px] bg-gray-800 rounded-xl overflow-hidden shadow-2xl mb-12 border border-gray-700 relative">
+            
+            <!-- LOADING OVERLAY (NEW) -->
+            <!-- این بخش روی iframe قرار میگیرد و پس از لود شدن حذف میشود -->
+            <div id="report-loader" class="absolute inset-0 z-20 bg-gray-800 flex flex-col items-center justify-center p-6 text-center">
+                <!-- Spinner -->
+                <div class="w-16 h-16 border-4 border-teal-500/30 border-t-teal-500 rounded-full animate-spin mb-6"></div>
+                
+                <!-- Loading Text -->
+                <h3 data-lang="loadingTitle" class="text-xl font-bold text-white mb-2"></h3>
+                <p data-lang="loadingMessage" class="text-gray-400 max-w-md text-sm leading-relaxed animate-pulse"></p>
+            </div>
+
+            <!-- Iframe -->
+            <iframe id="detail-iframe" class="w-full h-full relative z-10" frameborder="0" allowFullScreen="true"></iframe>
         </div>
 
         <!-- Project Story (Markdown Container) -->
         <div class="bg-gray-800 rounded-xl p-6 md:p-10 shadow-xl border-t-4 border-teal-500">
-            <!-- Generated HTML from Markdown will be injected here -->
             <div id="detail-story" class="markdown-content"></div>
         </div>
 
