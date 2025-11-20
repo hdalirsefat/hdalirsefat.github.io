@@ -35,6 +35,10 @@ const translations = {
         "ctaBtn": "Explore Data Story",
         "badgeText": "Interactive Report",
 
+        // --- Loading Messages (NEW) ---
+        "loadingTitle": "Loading Dashboard...",
+        "loadingMessage": "Please wait while the interactive report is being fetched from Microsoft Power BI servers. This may take a few moments depending on your connection speed.",
+
         "heroTitle": "Welcome to My World of Data",
         "heroSubtitle": "A Business Intelligence Specialist transforming complex data into clear, actionable insights for process optimization.",
         "aboutTitle": "About Me",
@@ -46,7 +50,6 @@ const translations = {
         "resumeBtnFa": "Download Resume (FA)",
         "footerText": "&copy; 2025 - Hadi Dalirsefat. All rights reserved.",
 
-        // --- Project 1: Doc Management ---
         "DocMngtTitle": "Engineering Document Management",
         "DocMngtDesc": "Tracking project engineering documents in compliance with MDR and contractual schedules.",
         "DocMngtStory": `
@@ -68,7 +71,6 @@ I designed a centralized **Power BI Dashboard** connected to SharePoint Lists.
 This system reduced the document retrieval time by **40%** and ensured 100% compliance with client deadlines.
         `,
 
-        // --- Project 2: SuperMarket ---
         "OnlineSuperMarketTitle": "Online SuperMarket Analysis",
         "OnlineSuperMarketDesc": "Data cleaning and performance metrics tracking for online supermarket services.",
         "OnlineSuperMarketStory": `
@@ -84,7 +86,6 @@ This project focused on analyzing sales data from an online supermarket to ident
 * Specific product bundling recommendations increased average order value.
         `,
 
-        // --- Project 3: Daily Reports ---
         "DailyReportsTitle": "DailyReports Dashboard",
         "DailyReportsDesc": "Comparing Enterprise-level MSP plans with logged reports in SharePoint.",
         "DailyReportsStory": `
@@ -100,7 +101,6 @@ I integrated data from **Project Server** and **SharePoint Daily Logs**.
 Senior management gained a real-time view of project slippage, allowing for immediate corrective actions.
         `,
 
-        // --- Project 4: Warehouse ---
         "WHMTitle": "Online Warehouse Management Dashboard",
         "WHMDesc": "Real-time inventory updates accounting for material requests and reservations.",
         "WHMStory": `
@@ -121,10 +121,12 @@ Managing inventory across multiple project sites requires real-time data.
         "navPortfolio": "نمونه کار",
         "navResume": "رزومه",
         "backBtn": "بازگشت به نمونه‌کارها",
-        
-        // متن جدید برای فراخوان اقدام (Call to Action)
         "ctaBtn": "مشاهده داستان داده‌ها",
         "badgeText": "گزارش تعاملی",
+
+        // --- Loading Messages (NEW) ---
+        "loadingTitle": "در حال بارگذاری داشبورد...",
+        "loadingMessage": "لطفاً شکیبا باشید؛ گزارش در حال دریافت از سرورهای مایکروسافت Power BI است. بسته به سرعت اینترنت شما، این فرآیند ممکن است چند لحظه طول بکشد.",
 
         "heroTitle": "به دنیای دیتای من خوش آمدید",
         "heroSubtitle": "متخصص هوش تجاری، تبدیل داده‌های پیچیده به بینش‌های شفاف و عملیاتی برای بهینه‌سازی فرآیندها.",
@@ -137,7 +139,6 @@ Managing inventory across multiple project sites requires real-time data.
         "resumeBtnFa": "دانلود رزومه (FA)",
         "footerText": "© 2025 - هادی دلیرصفت. تمام حقوق محفوظ است.",
 
-        // --- Project 1: Doc Management ---
         "DocMngtTitle": "مدیریت مستندات مهندسی (EDMS)",
         "DocMngtDesc": "پایش و رهگیری مدارک مهندسی مطابق با لیست MDR و تعهدات زمان‌بندی شده.",
         "DocMngtStory": `
@@ -159,7 +160,6 @@ Managing inventory across multiple project sites requires real-time data.
 این سیستم زمان جستجوی اسناد را **۴۰٪ کاهش داد** و انطباق ۱۰۰٪ با مهلت‌های کارفرما را تضمین کرد.
         `,
 
-        // --- Project 2: SuperMarket ---
         "OnlineSuperMarketTitle": "تحلیل سوپرمارکت آنلاین",
         "OnlineSuperMarketDesc": "پاکسازی داده و ردیابی معیارهای عملکرد برای سرویس‌های آنلاین.",
         "OnlineSuperMarketStory": `
@@ -175,7 +175,6 @@ Managing inventory across multiple project sites requires real-time data.
 * پیشنهاد بسته‌های محصولی خاص باعث افزایش میانگین ارزش سفارش شد.
         `,
 
-        // --- Project 3: Daily Reports ---
         "DailyReportsTitle": "داشبورد گزارش روزانه تولید",
         "DailyReportsDesc": "مقایسه برنامه‌های MSP سطح سازمانی با گزارشات ثبت شده در شیرپوینت.",
         "DailyReportsStory": `
@@ -191,7 +190,6 @@ Managing inventory across multiple project sites requires real-time data.
 مدیریت ارشد دیدی در لحظه از انحرافات پروژه به دست آورد که امکان اقدامات اصلاحی فوری را فراهم کرد.
         `,
 
-        // --- Project 4: Warehouse ---
         "WHMTitle": "مدیریت آنلاین انبار",
         "WHMDesc": "بروزرسانی موجودی انبار با احتساب درخواست‌ها و رزرو کالا.",
         "WHMStory": `
