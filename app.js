@@ -5,6 +5,7 @@ const detailTitle = document.getElementById('detail-title');
 const detailStory = document.getElementById('detail-story');
 
 // --- 1. Helper: Get Icons based on Theme ---
+// این تابع کد SVG مربوط به هر موضوع را برمی‌گرداند (بدون نیاز به عکس)
 const getThemeIcon = (theme) => {
     const icons = {
         doc: `<svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 text-teal-500 opacity-50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>`,
@@ -88,15 +89,37 @@ const renderProjectDetails = () => {
     const urlParams = new URLSearchParams(window.location.search);
     const projectId = urlParams.get('id');
     const project = projectsData.find(p => p.id === projectId);
+    
+    // Loader Elements
+    const loader = document.getElementById('report-loader');
+    const iframe = document.getElementById('detail-iframe');
 
     if (project) {
-        document.getElementById('detail-iframe').src = project.reportUrl;
+        // 1. Reset Loader State (Make it visible initially)
+        if (loader) {
+            loader.classList.remove('fade-out');
+        }
+
+        // 2. Set Data & Content
         detailTitle.setAttribute('data-lang', `${project.id}Title`);
         detailStory.setAttribute('data-project-id', project.id);
         renderMarkdownStory(getCurrentLang(), project.id);
+
+        // 3. Handle Iframe Loading
+        // We use a slight delay even after onload to ensure Power BI internal rendering has started
+        iframe.onload = () => {
+            setTimeout(() => {
+                if (loader) loader.classList.add('fade-out');
+            }, 2000); // 2 seconds buffer for smooth transition
+        };
+        
+        // Set src triggers the load
+        iframe.src = project.reportUrl;
+
     } else {
         detailTitle.innerText = "Project Not Found";
         detailStory.innerHTML = "<p class='text-red-500'>Invalid Project ID.</p>";
+        if(loader) loader.style.display = 'none'; // Hide loader on error
     }
 };
 
