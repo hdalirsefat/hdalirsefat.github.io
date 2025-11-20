@@ -1,28 +1,28 @@
-// 1. تنظیمات پروژه‌ها (فقط لینک‌ها و شناسه‌ها)
+// 1. تنظیمات پروژه‌ها
 const projectsData = [
     {
         id: "DocMngt",
-        reportUrl: "https://app.powerbi.com/view?r=eyJrIjoiNDY4MjAxMzUtMDE2Mi00MTc5LWFjNmMtYmFiZDFiYjIzNjhhIiwidCI6ImU3MDdlN2I4LTA3YWQtNGRkZC05ZTQxLWY4Mzc5MmIwYWRiYSJ9",
-        imgPlaceholder: "https://via.placeholder.com/600x400/111827/14b8a6?text=Doc+Management" // می‌توانید عکس واقعی بگذارید
+        theme: "doc", 
+        reportUrl: "https://app.powerbi.com/view?r=eyJrIjoiNDY4MjAxMzUtMDE2Mi00MTc5LWFjNmMtYmFiZDFiYjIzNjhhIiwidCI6ImU3MDdlN2I4LTA3YWQtNGRkZC05ZTQxLWY4Mzc5MmIwYWRiYSJ9"
     },
     {
         id: "OnlineSuperMarket",
-        reportUrl: "https://app.powerbi.com/view?r=eyJrIjoiNmY1MWRiNGUtNTBiYi00YmU1LTk5MTgtNzc0YTY0ZmM1ZWNjIiwidCI6ImU3MDdlN2I4LTA3YWQtNGRkZC05ZTQxLWY4Mzc5MmIwYWRiYSJ9",
-        imgPlaceholder: "https://via.placeholder.com/600x400/111827/14b8a6?text=SuperMarket"
+        theme: "shop",
+        reportUrl: "https://app.powerbi.com/view?r=eyJrIjoiNmY1MWRiNGUtNTBiYi00YmU1LTk5MTgtNzc0YTY0ZmM1ZWNjIiwidCI6ImU3MDdlN2I4LTA3YWQtNGRkZC05ZTQxLWY4Mzc5MmIwYWRiYSJ9"
     },
     {
         id: "DailyReports",
-        reportUrl: "https://app.powerbi.com/view?r=eyJrIjoiMGZiYjlhNGYtOGNiYy00M2FmLWE4MjUtZjZkN2M5NTk4YjVhIiwidCI6ImU3MDdlN2I4LTA3YWQtNGRkZC05ZTQxLWY4Mzc5MmIwYWRiYSJ9",
-        imgPlaceholder: "https://via.placeholder.com/600x400/111827/14b8a6?text=Daily+Reports"
+        theme: "chart",
+        reportUrl: "https://app.powerbi.com/view?r=eyJrIjoiMGZiYjlhNGYtOGNiYy00M2FmLWE4MjUtZjZkN2M5NTk4YjVhIiwidCI6ImU3MDdlN2I4LTA3YWQtNGRkZC05ZTQxLWY4Mzc5MmIwYWRiYSJ9"
     },
     {
         id: "WHM",
-        reportUrl: "https://app.powerbi.com/view?r=eyJrIjoiOWYxNzY0ZDYtNjI5Yi00OTQ2LWExYjYtNzhkMzExYmQwOTRiIiwidCI6ImU3MDdlN2I4LTA3YWQtNGRkZC05ZTQxLWY4Mzc5MmIwYWRiYSJ9",
-        imgPlaceholder: "https://via.placeholder.com/600x400/111827/14b8a6?text=Warehouse"
+        theme: "warehouse",
+        reportUrl: "https://app.powerbi.com/view?r=eyJrIjoiOWYxNzY0ZDYtNjI5Yi00OTQ2LWExYjYtNzhkMzExYmQwOTRiIiwidCI6ImU3MDdlN2I4LTA3YWQtNGRkZC05ZTQxLWY4Mzc5MmIwYWRiYSJ9"
     }
 ];
 
-// 2. ترجمه‌ها و داستان‌ها (Markdown)
+// 2. ترجمه‌ها
 const translations = {
     "en": {
         "pageTitle": "Portfolio - Hadi Dalirsefat",
@@ -32,8 +32,9 @@ const translations = {
         "navPortfolio": "Portfolio",
         "navResume": "Resume",
         "backBtn": "Back to Portfolio",
-        "viewProjectBtn": "View Story & Report",
-        
+        "ctaBtn": "Explore Data Story",
+        "badgeText": "Interactive Report",
+
         "heroTitle": "Welcome to My World of Data",
         "heroSubtitle": "A Business Intelligence Specialist transforming complex data into clear, actionable insights for process optimization.",
         "aboutTitle": "About Me",
@@ -120,7 +121,10 @@ Managing inventory across multiple project sites requires real-time data.
         "navPortfolio": "نمونه کار",
         "navResume": "رزومه",
         "backBtn": "بازگشت به نمونه‌کارها",
-        "viewProjectBtn": "مشاهده داستان و گزارش",
+        
+        // متن جدید برای فراخوان اقدام (Call to Action)
+        "ctaBtn": "مشاهده داستان داده‌ها",
+        "badgeText": "گزارش تعاملی",
 
         "heroTitle": "به دنیای دیتای من خوش آمدید",
         "heroSubtitle": "متخصص هوش تجاری، تبدیل داده‌های پیچیده به بینش‌های شفاف و عملیاتی برای بهینه‌سازی فرآیندها.",
