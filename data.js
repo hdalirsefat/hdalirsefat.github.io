@@ -18,7 +18,7 @@ const projectsData = [
     {
         id: "WHM",
         theme: "warehouse",
-        reportUrl: "https://app.powerbi.com/view?r=eyJrIjoiOWYxNzY0ZDYtNjI5Yi00OTQ2LWExYjYtNzhkMzExYmQwOTRiIiwidCI6ImU3MDdlN2I4LTA3YWQtNGRkZC05ZTQxLWY4Mzc5MmIwYWRiYSJ9"
+        reportUrl: "https://app.powerbi.com/view?r=eyJrIjoiNjEzZjExM2QtNGZiNC00ZGJlLTkxOTctOGYzODY5OTZiZGY4IiwidCI6ImU3MDdlN2I4LTA3YWQtNGRkZC05ZTQxLWY4Mzc5MmIwYWRiYSJ9"
     }
 ];
 
