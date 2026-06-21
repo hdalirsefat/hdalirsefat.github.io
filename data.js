@@ -8,7 +8,7 @@ const projectsData = [
     {
         id: "OnlineSuperMarket",
         theme: "shop",
-        reportUrl: "https://app.powerbi.com/view?r=eyJrIjoiNmY1MWRiNGUtNTBiYi00YmU1LTk5MTgtNzc0YTY0ZmM1ZWNjIiwidCI6ImU3MDdlN2I4LTA3YWQtNGRkZC05ZTQxLWY4Mzc5MmIwYWRiYSJ9"
+        reportUrl: "https://app.powerbi.com/view?r=eyJrIjoiYTE1NzVhNTgtMGRiMy00MGFlLWFhNWUtMzg5MDk5N2FhZWM2IiwidCI6ImU3MDdlN2I4LTA3YWQtNGRkZC05ZTQxLWY4Mzc5MmIwYWRiYSJ9"
     },
     {
         id: "DailyReports",
