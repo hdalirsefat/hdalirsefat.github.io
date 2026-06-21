@@ -6,7 +6,7 @@ const projectsData = [
         reportUrl: "https://app.powerbi.com/view?r=eyJrIjoiNDY4MjAxMzUtMDE2Mi00MTc5LWFjNmMtYmFiZDFiYjIzNjhhIiwidCI6ImU3MDdlN2I4LTA3YWQtNGRkZC05ZTQxLWY4Mzc5MmIwYWRiYSJ9"
     },
     {
-        id: "OnlineSuperMarket",
+        id: "Contract",
         theme: "shop",
         reportUrl: "https://app.powerbi.com/view?r=eyJrIjoiYTE1NzVhNTgtMGRiMy00MGFlLWFhNWUtMzg5MDk5N2FhZWM2IiwidCI6ImU3MDdlN2I4LTA3YWQtNGRkZC05ZTQxLWY4Mzc5MmIwYWRiYSJ9"
     },
@@ -71,9 +71,9 @@ I designed a centralized **Power BI Dashboard** connected to SharePoint Lists.
 This system reduced the document retrieval time by **40%** and ensured 100% compliance with client deadlines.
         `,
 
-        "OnlineSuperMarketTitle": "Online SuperMarket Analysis",
-        "OnlineSuperMarketDesc": "Data cleaning and performance metrics tracking for online supermarket services.",
-        "OnlineSuperMarketStory": `
+        "ContractTitle": "Online SuperMarket Analysis",
+        "ContractDesc": "Data cleaning and performance metrics tracking for online supermarket services.",
+        "ContractStory": `
 ### Overview
 This project focused on analyzing sales data from an online supermarket to identify purchasing patterns.
 
